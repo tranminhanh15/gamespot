@@ -28,6 +28,10 @@
                 </p>
               </div>
             </div>
+            <div>
+              <input type="checkbox" v-model="formdata.check" >
+              <label for=""> remember password</label>
+            </div>
 
             <button type="submit">
               Sign in
@@ -50,7 +54,8 @@ export default {
       error:false,
       formdata: {
         email: 'anh1@gmail.com',
-        password: 'anh123'
+        password: 'anh123',
+        check: false
       }
     }
   },

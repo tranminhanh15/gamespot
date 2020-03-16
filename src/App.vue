@@ -15,6 +15,9 @@ export default {
   components: {
     comHeader,
     comFooter
+  },
+  created(){
+    this.$store.dispatch('admin/refreshToken')
   }
 }
 </script>
